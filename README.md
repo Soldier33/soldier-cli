@@ -1,7 +1,7 @@
 
-# daweitest-cli
+# soldier-cli
 
-![Npm Version](https://img.shields.io/badge/daweitest-cli_v1.0.3-green)
+![Npm Version](https://img.shields.io/badge/soldier-cli_v1.0.3-green)
 
 ## 📖简介
 
@@ -9,30 +9,30 @@
 
 ## 📕 模板
 
--   ✅ 快速生成 Vue3 框架模板 | [Vue3-Typescript快速开发模板](https://gitee.com/sohucw/admin-pro)
+-   ✅ 快速生成  模板
 
 ## 📦 安装
 
 ```bash
-  npm i daweitest-cli -g
+  npm i soldier-cli -g
 ```
 
 ## 🚩使用
 
 ```bash
 # 使用模板创建一个新项目
-daweitest create
+soldier create
 
 # 执行项目文件夹名称并选择模板创建新项目
-daweitest create [prjName]
+soldier create [prjName]
 
 # 更新脚手架到最新版本
-daweitest update
+soldier update
 
 # 查看脚手架版本
-daweitest -v
+soldier -v
 
-daweitest --version
+soldier --version
 ```
 
 

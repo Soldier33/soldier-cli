@@ -1,5 +1,5 @@
 {
-    "name": "daweitest-cli",
+    "name": "soldier-cli",
     "version": "1.0.2",
     "main": "index.js",
     "scripts": {
@@ -10,17 +10,17 @@
         "Vue3-Vite"
     ],
     "license": "ISC",
-    "description": "daweitest-cli",
+    "description": "soldier-cli",
     "files": [
         "dist",
         "bin",
         "README.md"
     ],
     "author": {
-        "name": "dawei"
+        "name": "soldier"
     },
     "bin": {
-        "daweitest": "bin/index.js"
+        "soldier": "bin/index.js"
     },
     "devDependencies": {
         "@inquirer/prompts": "^3.2.0",
