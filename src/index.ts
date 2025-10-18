@@ -4,9 +4,9 @@ import { create } from './command/create';
 import {update} from './command/update';
 
 // 创建命令行工具
-// 这里我们用 dawei 当作我的指令名称
-// 命令行中使用 dawei xxx 即可触发
-const program = new Command('daweitest');
+// 这里我们用 soldier 当作我的指令名称
+// 命令行中使用 soldier xxx 即可触发
+const program = new Command('soldier');
 // .vesion 表示可以使用 -V --version 参数查看当前SDK版本
 // 我们直接使用 package.json 中的 version 即可
 program
@@ -16,7 +16,7 @@ program
 
 
 program.command('update')
-.description('update the dawei-cli')
+.description('update the soldier-cli')
 .action( async () => {
     // await update();
     console.log('update command')

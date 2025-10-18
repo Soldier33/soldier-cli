@@ -4,10 +4,10 @@ import log from './log';
 // 设置预估git clone的时间并展示进度条。
 import createLogger from 'progress-estimator';
 import chalk from 'chalk';
-const figlet = require('figlet');
+import figlet from 'figlet';
 
 const goodPrinter = async () => {
-    const data = await figlet('欢迎使用 dawei-cli 脚手架');
+    const data = await figlet('欢迎使用 soldier-cli 脚手架');
     console.log(chalk.rgb(40, 156, 193).visible(data));
 };
 
@@ -41,7 +41,7 @@ export const clone = async (
         goodPrinter();
         console.log();
         console.log(chalk.blueBright(`==================================`));
-        console.log(chalk.blueBright(`=== 欢迎使用 dawei-cli 脚手架 ===`));
+        console.log(chalk.blueBright(`=== 欢迎使用 soldier-cli 脚手架 ===`));
         console.log(chalk.blueBright(`==================================`));
         console.log();
 

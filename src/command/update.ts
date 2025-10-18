@@ -3,7 +3,7 @@ import ora from 'ora';
 import chalk from 'chalk';
 import log from '../utils/log';
 const spinner = ora({
-    text: 'dawei-cli 正在更新... \n',
+    text: 'soldier-cli 正在更新... \n',
     spinner: {
         interval: 80,
         frames: ['⠋', '⠙', '⠹', '⠸', '⠼', '⠴', '⠦', '⠧', '⠇', '⠏'].map((item) =>
@@ -15,7 +15,7 @@ const spinner = ora({
 // 项目创建流程
 export function update() {
     spinner.start();
-    process.exec('npm install dawei-cli@latest -g', (error) => {
+    process.exec('npm install soldier-cli@latest -g', (error) => {
         spinner.stop();
         if (!error) {
             log.success('更新成功 ~');

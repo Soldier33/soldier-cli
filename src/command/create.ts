@@ -17,11 +17,11 @@ export interface TemplateInfo {
 // 这里保存了我写好的两个预设模板 
 export const templates: Map<string, TemplateInfo> = new Map(
     [
-        ["Vite4-Vue3-Typescript-template", {
+        ["learn模板", {
             name: "admin-template",
-            downloadUrl: 'git@gitee.com:sohucw/admin-pro.git',
-            description: 'Vue3技术栈开发模板',
-            branch: 'dev8'
+            downloadUrl: 'git@github.com:Soldier33/learning.git',
+            description: 'learn模板',
+            branch: 'main'
         }]
     ]
 )
@@ -61,7 +61,7 @@ export const getNpmLatestVersion = async (npmName: string) => {
     const { data } = (await getNpmInfo(npmName)) as AxiosResponse;
     // data['dist-tags'].latest 为最新版本号
     // log.error(data);
-    return data['dist-tags'].latest;
+    return data?.['dist-tags']?.latest ?? '0.0.0';
 };
 /**
  * @description 检测 npm 包是否需要更新
@@ -73,15 +73,15 @@ export const checkVersion = async (name: string, version: string) => {
     const need = gt(latestVersion, version);
     if (need) {
         log.info(
-            `检测到 dawei 最新版:${chalk.blueBright(
+            `检测到 soldier 最新版:${chalk.blueBright(
                 latestVersion
             )} 当前版本:${chalk.blueBright(version)} ~`
         );
         log.info(
             `可使用 ${chalk.yellow(
                 'npm'
-            )} install dawei-cli@latest 或 ${chalk.yellow(
-                'dawei'
+            )} install soldier-cli@latest 或 ${chalk.yellow(
+                'soldier'
             )} update 更新 ~`
         );
     }
